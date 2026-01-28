@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>CSS Demonstration Page</title>
+	
+	<style>	
+		body{
+			background: linear-gradient(to right, #74ebd5, #acb6e5);
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		h1{
+			font-family: "Georgia", serif;
+			font-size: 40px;
+			color: #2c3e50;
+			text-align: center;
+			text-shadow: 2px 2px 5px #ffffff;
+		}
+		
+		p{
+			font-size: 10px;
+			color: #1f1f1f;
+			line-height: 1.6;
+			text-align: justify;
+			padding: 0 20px;
+		}
+		
+		.box{
+			width: 250px;
+			padding: 20px;
+			background-color: white;
+			border-radius: 12px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);	
+			position: absolute;
+			top: 200px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>Welcome to My CSS Styled Webpage</h1>
+	
+	<p>
+		This Webpage demonstrate the use of Cascading Style Sheets (CSS)
+		to change the background of the page, apply different text Style
+		and position elements. CSS helps web designers control the layout apperance, and style of a webpage.
+	</p>
+	
+	<div class="box">
+		<h3>Positioned Box</h3>
+		<p>This box uses <strong>absolute positioning</strong> to appear at a fixed location on the page.</p>
+	</div>
+</body>
+</html>

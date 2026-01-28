@@ -1,0 +1,20 @@
+	<html>
+<body>
+<p>Regular Expression</p>
+<button onclick ="myfunction()">TRY IT</button>
+function myfunction()
+<script>
+    {
+		var str="All these are not possible using HTML";
+		var n = str.search(/possible/i);
+		document.write("<br>"+n+"<br>");
+		var res=str.replace(/possible/i,"POSSIBLE");
+		document.write("<br>"+res+"<br>");
+		var patt=/e/;
+		document.write("<br>"+patt.test(str)+"<br>");
+		var len=str.length;
+		document.write("<br>"+len+"<br>");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Advanced Form Validation</title>
+	 
+	 <style> 
+	  body {
+		   font-family:Arial, sans-serif;
+		   background: #f2f2f2;
+		   padding: 40px;
+		} 
+		
+		.container {
+			width: 450px;
+			background: #fff;
+			padding: 25px;
+			margin: auto;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #ccc;
+			
+		}
+		
+		h2	{
+			text-align: center;
+			color: #333;
+		}
+		
+		.input-group {
+			margin-bottom:  18px;
+		}
+		
+		label {
+			font-weight: bold;
+		} 
+		
+		input, select { 
+			width: 100%;
+			padding: 10px;
+			margin-top: 6px;
+			box-sizing: border-box;
+			border: 1px solid #aaa;
+			border-radius: 5px;
+		}
+		
+		.error {
+			color: red;
+			font-size: 14px;
+			margin-top: 4px;
+		}
+		
+		.success {
+			color: green;
+			text-align: center;
+			font-size: 18px;
+		}
+		
+		button {
+			width: 100%;
+			padding: 10px;
+			background: #007bff;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			}
+		
+		button:hover {
+			background: #0056b3;
+		}
+		
+		input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+            }
+
+		</style>
+</head>
+<body>
+	
+<div class="container">
+	<h2>Registration Form</h2>
+	<form id="regForm">
+	   
+			<div class="input-group">
+				<label>Name</label>
+				<input type = "text" id="name">
+				<div class="error" id="nameError"></div>
+			</div>
+			
+			<div class="input-group">
+				<label>Email</label>
+				<input type = "text" id="email">
+				<div class="error" id="emailError"></div>
+			</div>
+			
+			<div class="input-group">
+				<label>Password</label>
+				<input type = "password" id="password">
+				<div class="error" id="passwordError"></div>
+			</div>
+			
+			<div class="input-group">
+				<label>Re-Type Password</label>
+				<input type = "password" id="password2">
+				<div class="error" id="passwordError2"></div>
+			</div>
+			
+			<div class="input-group">
+				<label>Phone Number</label>
+				<input type = "text" id="phone">
+				<div class="error" id="phoneError"></div>
+			</div>
+			
+			<div class="input-group">
+				<label>Gender</label>
+				<select id="gender">
+					<option value= " ">Select Gender</option>
+					<option value= "male">Male</option>
+					<option value= "female">female</option>
+					</select>
+					<div class="error" id ="genderError"></div>
+			</div>
+			
+			<div class="input-group">
+				<input type = "checkbox" id="terms">Accept Terms & Conditions
+				<div class="error" id="termsError"></div>
+				
+				<button type="submit">Register</button>
+				
+				<p class= "success" id="successMessage"></p>
+			
+			</form>
+		</div>
+</body>
+
+</html>
