@@ -1,0 +1,6 @@
+var jsonobj = '{ "name":"Brenden Eich", "designerof":"javascript","bornin":"1961"}';
+var obj = JSON.parse(jsonobj);
+print("JSON Object/Text : ");
+print(obj.name + ",who was born in " + obj.bornin + ",was the designer of" + obj.designerof);
+print("Use of Javascript Object : ");
+print(jsonobj);
